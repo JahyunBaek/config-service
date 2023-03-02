@@ -8,3 +8,4 @@ spring:
       server:
         git:
           uri: file:///${user.home}/git-local-repo
+          default-label: master
