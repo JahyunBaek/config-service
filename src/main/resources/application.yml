@@ -7,5 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: file:///${user.home}/git-local-repo
-          default-label: master
+          uri: https://github.com/JahyunBaek/msa-config.git
