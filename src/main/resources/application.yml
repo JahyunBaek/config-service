@@ -8,3 +8,25 @@ spring:
       server:
         git:
           uri: https://github.com/JahyunBaek/msa-config.git
+          default-label: main
+        encrypt:
+          enabled: false
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*" # (4)
+          # - "refresh" # 위 '*'  으로 전체를 공개 해서 주석
+          # - "bus-refresh" # 위 '*'  으로 전체를 공개 해서 주석
+  endpoint:
+    refresh:
+      enabled: true
+encrypt:
+  key: secret-test
